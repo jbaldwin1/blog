@@ -1,5 +1,6 @@
 <h1>Listing Articles</h1>
 
+<%= link_to 'New Article', new_article_path %>
 
 <table>
     <tr>
@@ -15,3 +16,9 @@
         </tr>
     <% end %>
 </table>
+
+<%= form_form :article, url: articles_path do |f| %>
+
+<% end %>
+
+<%= link_to 'Back', article_path %>
